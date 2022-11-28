@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>WOMEN STORE</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <a href="home.html" class="logo">Wo<span>Man</span></a>
+
+   <nav class="navbar">
+      <a href="home.html">home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      
+   </nav>
+
+   <div class="icons">
+    <div id="menu-btn" class="fas fa-bars"></div>
+    <div class="bx bx-shopping-bag" id="cart-icon"></div>
+    <div id="login-btn" class="fas fa-user"></div>
+ </div>
+
+ 
+   
+   <form action="valid.php" method = "post" class="login-form">
+      <h3>login form</h3>
+      <input type="text" name = "user"  placeholder="enter user name" class="box" required>
+      <input type="password" name = "password" placeholder="enter your password" class="box" required>
+      
+      <input type="submit" value="login now" class="btn">
+      <p>don't have an account <a href="rgs.html">create one!</a></p>
+   </form>
+   <div class="cart">
+      <h2 class="cart-title">Your Cart</h2>
+      <div class="cart-content">
+       <div class="cart-box">
+        <img src="" alt="" class="cart-img">
+                      <div class="detail-box">
+                      <div class="cart-product-title">Free Earrings</div>
+                      <div class="cart-price">Ksh 0</div>
+                     <input type="number" value="1" class="cart-quantity">
+                     </div>
+                     <i class="bx bxs-trash-alt cart-remove"></i>
+       </div>
+       
+   </div> 
+   <div class="total">
+       <div class="total-title">Total</div>
+       <div class="total-price">Ksh 0</div>
+   </div>
+   <button type="button" class="btn-buy">Buy Now</button>
+   <i class="bx bx-x" id="close-cart"></i>
+    </div>
+</div>
+
+
+</header>
+
+
+  
+   <section class="contact" id="contact">
+    
+    <h2 class="section-title" id="about">About Us</h2>
+
+   
+    <div class="row">
+
+       <iframe
+       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31917.1469605391!2d37.44324406712016!3d-0.5365620749462074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18262de0b161c82f%3A0x86c79bba0e2b8896!2sEmbu!5e0!3m2!1sen!2ske!4v1667981146373!5m2!1sen!2ske" 
+       width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+       </iframe>
+      
+       <form>
+          <h3>Contact <span>Wo</span>Man</h3>
+          <div class="phone">
+          <div class="hero">
+          <input type="text" id="name" required>
+          <label for="name">Your Name</label>
+          </div>
+          <div class="hero">
+          <input type="number" id="number" required>
+          <label for="number">Phone NO.</label>
+          </div>
+          </div>
+          <div class="hero">
+          <input type="email" id="email" required>
+          <label for="email">Email Id</label>
+          </div>
+          <div class="hero">
+          <textarea required id="message" rows="7"></textarea>
+          <label for="message">Your issue</label>
+          </div>
+          <p class="success"> <?php echo $success;  ?></p>
+          <p class="failed"> <?php echo $failed;  ?></p>
+           <input type="submit" value="send" class="btn">
+          
+        </form>
+
+
+    </div>
+
+ </section>
+
+
+<section class="footer">
+
+    <div class="links">
+       <a class="btn" href="home.html">Home</a>
+       <a class="btn" href="products.html">Products</a>
+       <a class="btn" href="about.html">About</a>
+     
+    </div>
+    
+ </section>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+<script src="script.js"></script>
+
+
+</body>
+   
+</section>
+
+</html>

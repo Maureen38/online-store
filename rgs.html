@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<?php
+session_start();
+header('location:home.html');
+?>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>WOMEN STORE</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <a href="home.html" class="logo">Wo<span>Man</span></a>
+
+   <nav class="navbar">
+      <a href="home.html">home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      
+   </nav>
+
+   <div class="icons">
+    <div id="menu-btn" class="fas fa-bars"></div>
+    <div class="bx bx-shopping-bag" id="cart-icon"></div>
+    <div id="login-btn" class="fas fa-user"></div>
+ </div>
+
+ 
+   
+   <form action="valid.php" method = "post" class="login-form">
+      <h3>login form</h3>
+      <input type="text" name = "user"  placeholder="enter user name" class="box" required>
+      <input type="password" name = "password" placeholder="enter your password" class="box" required>
+      
+      <input type="submit" value="login now" class="btn">
+      <p>don't have an account <a href="rgs.html">create one!</a></p>
+   </form>
+   <div class="cart">
+      <h2 class="cart-title">Your Cart</h2>
+      <div class="cart-content">
+       <div class="cart-box">
+        <img src="" alt="" class="cart-img">
+                      <div class="detail-box">
+                      <div class="cart-product-title">Free Earrings</div>
+                      <div class="cart-price">Ksh 0</div>
+                     <input type="number" value="1" class="cart-quantity">
+                     </div>
+                     <i class="bx bxs-trash-alt cart-remove"></i>
+       </div>
+       
+   </div> 
+   <div class="total">
+       <div class="total-title">Total</div>
+       <div class="total-price">Ksh 0</div>
+   </div>
+   <button type="button" class="btn-buy">Buy Now</button>
+   <i class="bx bx-x" id="close-cart"></i>
+    </div>
+</div>
+
+
+</header>
+<section class="shop">
+   <h2 class="section-title">Register Here</h2>
+   <form action="rrr.php" method = "post" class="reg-form">
+      <h3>Registration form</h3>
+      <div class="reg">
+      <input type="text" name = "user"  placeholder="enter user name" class="box" required>
+   </div>
+      <input type="password" name = "password" placeholder="enter your password" class="box" required>
+      <div class="reg">
+      <input type="submit" value="Register now" class="btn">
+   </div>
+     
+   </form>
+</section>
+
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
